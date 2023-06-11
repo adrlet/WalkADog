@@ -1,0 +1,23 @@
+# Use postgres/example user/password credentials
+version: '3.7'
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: 'waddb'
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_ROOT_PASSWORD: ""
+    volumes:
+      - ./db:/var/lib/mysql
+
+#  backend:
+#    build:
+#      context: .
+#    image: "walkadog"
+#    ports:
+#      - "8081:8080"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker

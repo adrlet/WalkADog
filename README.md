@@ -1,0 +1,1 @@
+Projekt zespołowy zakładał utworzenia aplikacji mobilnej dla trenerów psów i klientów w celu umawiania spacerów między trenerem a klientem. Udostępiony kod źródłowy stanowi back-end aplikacji w framework'u Java Spring.
